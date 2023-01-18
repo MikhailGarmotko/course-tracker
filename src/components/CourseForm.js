@@ -30,9 +30,9 @@ export default function CourseForm({ courseAdded }) {
     
     return (
         <div className="card">
-            <div className="card-header">Add a New Course</div>
+            <div className="card-header">Please Add a New Course</div>
             <div className="card-body">
-                <form className="" onSubmit={submitCourse}>
+                <form action ="https://worker.httpsworkers-airtable-form-bg9pagesdev.workers.dev/submit" method="POST" className="">
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input

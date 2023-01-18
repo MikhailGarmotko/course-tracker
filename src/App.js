@@ -10,6 +10,7 @@ function App() {
     try {
       const res = await fetch('/.netlify/functions/courses');
       const courses = await res.json();
+      debugger;
       setCourses(courses);
     } catch (error) {
         console.error(error);
